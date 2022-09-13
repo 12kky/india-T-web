@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Blaka Hollow", cursive;
+  font-family: "Josefin Sans", sans-serif;
+}
+header {
+  width: 100%;
+  height: 120vh;
+  background-color: pink;
+  background-image: url("img-.jpg");
+  background: no-repeat;
+  background-position: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  animation: changebackground 13s infinite ease-in-out;
+}
+nav {
+  width: 100%;
+  height: 12vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+
+  
+
+  
+
+.logo {
+  width: 25%;
+  text-align: center;
+}
+.menu {
+  width: 40%;
+
+  display: flex;
+  justify-content: space-around;
+}
+.menu a {
+  width: 25%;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+.menu a:first-child {
+  color: pink;
+}
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  text-decoration-color: bisque;
+}
+
+section h3 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.btnone {
+  background: #fff;
+  color: #000;
+}
+.btntwo {
+  background: pink;
+  color: #000;
+}
+.change_content:after {
+  content: "";
+  animation: changetext 13s infinite linear;
+  color: pink;
+  font-size: 4rem;
+  text-shadow: 2px 1px 5px black;
+  letter-spacing: 3px;
+}
+
+@keyframes changetext {
+  0% {
+    content: "Kerala";
+  }
+  20% {
+    content: "Dehli";
+  }
+  40% {
+    content: "Mumbai";
+  }
+  60% {
+    content: "Goa";
+  }
+  80% {
+    content: "Jaipur";
+  }
+}
+@keyframes changebackground {
+  0% {
+    background-image: url(img/img-3.jpg);
+  }
+  20% {
+    background-image: url(img/img-4.jpg);
+  }
+  40% {
+    background-image: url(img/img-5.jpg);
+  }
+  60% {
+    background-image: url(img/img-6.jpg);
+  }
+
+  80% {
+    background-image: url(img/img-2.jpg);
+  }
+  100% {
+    background-image: url(image.jpg);
+  }
+
+ }
+
